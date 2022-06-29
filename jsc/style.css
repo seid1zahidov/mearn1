@@ -1,0 +1,115 @@
+a {
+  text-decoration: none;
+}
+
+.all {
+  margin: 5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box {
+  margin-bottom: 2rem;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+}
+
+.box:hover .overlay {
+  width: 100%;
+}
+
+.box .overlay {
+  position: absolute;
+  z-index: 2;
+  width: 0%;
+  height: 100%;
+  background-color: rgba(0, 128, 0, 0.42);
+  -webkit-transition: .5s;
+  transition: .5s;
+  top: 0;
+  right: 0;
+}
+
+.box img {
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
+  height: 100%;
+}
+
+.box .price {
+  position: absolute;
+  z-index: 1;
+  top: 20px;
+  background-color: green;
+  color: #fff;
+  font-size: 20px;
+  padding: 5px 10px;
+}
+
+.box .boxes {
+  text-align: center;
+  margin-top: 8rem;
+  color: #fff;
+  font-size: 25px;
+}
+
+.alls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.alls .left {
+  width: 50%;
+  margin-left: 2rem;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.alls .right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 40%;
+}
+
+.alls .right a {
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+}
+
+.alls .right a:hover::after {
+  width: 30%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.alls .right a::after {
+  content: '';
+  position: absolute;
+  bottom: 8px;
+  left: 0;
+  width: 0%;
+  height: 4px;
+  background-color: red;
+}
+
+.alls .right i {
+  font-size: 25px;
+}
+/*# sourceMappingURL=style.css.map */
